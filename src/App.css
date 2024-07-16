@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4069bb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,40 @@
 
 .App-link {
   color: #61dafb;
+}
+.balloon {
+  position: absolute;
+  bottom: -100px; /* Start below the screen */
+  left: 50%;
+  width: 50px;
+  height: 70px;
+  background: red; /* Balloon color */
+  border-radius: 50% 50% 50% 50%;
+  animation: float 10s linear infinite;
+}
+
+.large {
+  width: 60px;
+  height: 80px;
+}
+
+.medium {
+  width: 50px;
+  height: 70px;
+}
+
+.small {
+  width: 40px;
+  height: 60px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh); /* Start at the bottom */
+  }
+  100% {
+    transform: translateY(-100vh); /* End at the top */
+  }
 }
 
 @keyframes App-logo-spin {
